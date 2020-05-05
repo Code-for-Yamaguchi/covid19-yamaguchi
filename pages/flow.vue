@@ -100,7 +100,7 @@
                 <i18n path="{publicHealthCenter}に掲載しています">
                   <template v-slot:publicHealthCenter>
                     <external-link
-                      url="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+                      url="https://www.pref.yamaguchi.lg.jp/cms/a11000/sodan/koronasoudan.html"
                     >
                       {{ $t('各保健所の電話番号は福祉保健局HP') }}
                     </external-link>
@@ -110,12 +110,12 @@
             </div>
             <div>
               <dt>
-                {{ $t('平日（夜間）: 午後5時から翌朝午前9時/土日祝 終日') }}
+                {{ $t('土日祝：9時から17時') }}
               </dt>
               <dd>
-                <a :class="$style.tel" href="tel:03-5320-4592">
+                <a :class="$style.tel" href="tel:083-933-3502">
                   <icon-phone :class="$style.icon" aria-hidden="true" />
-                  03-5320-4592</a
+                  083-933-3502</a
                 >
               </dd>
             </div>
@@ -206,15 +206,13 @@
           }}</span>
         </p>
         <h4 :class="[$style.sxnHeadingSmall]">
-          {{
-            $t(
-              '医師により検査が必要だと判断されPCR検査（東京都健康安全研究センター等）を受けた結果'
-            )
-          }}
+          {{ $t('医師により検査が必要だと判断されPCR検査を受けた結果') }}
         </h4>
         <div :class="$style.boxes">
           <div :class="[$style.box, $style.border]">
-            <h5 :class="$style.boxLead">{{ $t('陽性の場合') }}</h5>
+            <h5 :class="$style.boxLead">
+              {{ $t('陽性の場合') }}
+            </h5>
             <p>
               {{
                 $t(
@@ -227,7 +225,9 @@
             </div>
           </div>
           <div :class="[$style.box, $style.border]">
-            <h5 :class="$style.boxLead">{{ $t('陰性の場合') }}</h5>
+            <h5 :class="$style.boxLead">
+              {{ $t('陰性の場合') }}
+            </h5>
             <p>
               {{
                 $t('自宅で安静に過ごし、必要に応じて医療機関を受診してください')
@@ -246,11 +246,11 @@
     </div>
     <div :class="$style.detail">
       <a
-        href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+        href="https://www.pref.yamaguchi.lg.jp/cms/a11000/sodan/koronasoudan.html"
         target="_blank"
         :class="$style.detailButton"
         rel="noopener noreferrer"
-        >{{ $t('詳細を見る（東京都福祉保健局）') }}
+        >{{ $t('相談窓口') }}
         <v-icon :class="$style.icon" size="20">
           mdi-open-in-new
         </v-icon>
