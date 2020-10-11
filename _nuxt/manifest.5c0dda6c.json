@@ -49,7 +49,7 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#00a040",
+  "theme_color": "#00a63c",
   "lang": "en",
   "Scope": "/",
   "splash_pages": null
