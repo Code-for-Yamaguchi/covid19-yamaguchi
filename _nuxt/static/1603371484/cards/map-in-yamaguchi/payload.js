@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/cards/map-in-yamaguchi", {data:[{}],fetch:[],mutations:[]});
