@@ -32,7 +32,6 @@
       </v-icon>
 
       <nav class="SideNavigation-Menu">
-        <!--
         <div class="SideNavigation-Language">
           <div
             v-if="this.$i18n.locales.length > 1"
@@ -44,7 +43,6 @@
             <language-selector />
           </div>
         </div>
-        -->
         <menu-list :items="items" @click="$emit('closeNavi', $event)" />
       </nav>
       <br />
@@ -161,7 +159,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
-// import LanguageSelector from '@/components/LanguageSelector.vue'
+import LanguageSelector from '@/components/LanguageSelector.vue'
 import MenuList from '@/components/MenuList.vue'
 
 type Item = {
@@ -169,11 +167,12 @@ type Item = {
   title: TranslateResult
   link: string
   divider?: boolean
+  onlyJPContent?: boolean
 }
 
 export default Vue.extend({
   components: {
-    // LanguageSelector,
+    LanguageSelector,
     MenuList
   },
   props: {
@@ -196,9 +195,17 @@ export default Vue.extend({
           link: this.localePath('/flow')
         },
         {
+          icon: 'VaccineIcon',
+          title: this.$t('ワクチン接種に関するお知らせ'),
+          link:
+            'https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona-vaccine.html',
+          onlyJPContent: true
+        },
+        {
           icon: 'MaskTrashIcon',
           title: this.$t('ご家庭でのマスク等の捨て方'),
-          link: 'https://www.kankyo.metro.tokyo.lg.jp/resource/500200a20200221162304660.files/200327_chirashi.pdf',
+          link:
+            'https://www.kankyo.metro.tokyo.lg.jp/resource/500200a20200221162304660.files/200327_chirashi.pdf',
           divider: true
         },
         {
@@ -331,7 +338,13 @@ export default Vue.extend({
         {
           icon: 'YoutubeIcon',
           title: this.$t('山口県広報広聴課 公式チャンネル'),
-          link: 'https://www.youtube.com/channel/UCukxs2WSvAbgAweFsj8k5Cw'
+          link: 'https://www.youtube.com/channel/UCukxs2WSvAbgAweFsj8k5Cw',
+          divider: true
+        },
+        {
+          icon: 'FoodIcon',
+          title: this.$t('県内Go To Eat情報'),
+          link: 'https://gotoeat-yamaguchi.com/use/'
         }
       ]
     }

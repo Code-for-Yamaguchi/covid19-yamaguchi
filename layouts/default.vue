@@ -266,8 +266,6 @@ export default Vue.extend({
 }
 
 .open {
-  height: 100vh;
-
   @include largerThan($small) {
     overflow-x: hidden;
     overflow-y: auto;

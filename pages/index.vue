@@ -16,7 +16,7 @@
     <whats-new class="mb-4" :items="newsItems" />
     <static-info
       class="mb-4"
-      :urlNotUse="localePath('/flow')"
+      :url-not-use="localePath('/flow')"
       url="https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html"
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
     />

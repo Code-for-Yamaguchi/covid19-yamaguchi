@@ -1,2 +1,2 @@
-HOOK_URL=https://hooks.slack.com/services/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
+HOOK_URL=https://hooks.slack.com/services/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
 TARGET_DOMAIN=yamaguchi.stopcovid19.jp

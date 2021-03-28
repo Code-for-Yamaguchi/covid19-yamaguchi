@@ -38,9 +38,12 @@ function link_check_all(){
 	result=0
 	for url in $(cat /dev/stdin)
 	do
-		if ! link_check $url 1>/dev/null;then
+		if ! link_check $url 1>/dev/null; then
+			echo "$url : broken" >&2
 			echo $url
 			result=1
+		else
+			echo "$url : living" >&2
 		fi
 	done
 	return $result
@@ -48,7 +51,7 @@ function link_check_all(){
 
 function broken_link_test(){
 	DOMAIN_NAME=$1
-	wget -r -np --random-wait -x https://$DOMAIN_NAME --directory-prefix=downloaded_pages 1>/dev/null 2>/dev/null
+	wget -r -np --random-wait -x https://$DOMAIN_NAME --directory-prefix=downloaded_pages
 	url_extract_all ./downloaded_pages/$DOMAIN_NAME | link_check_all
 	result=$?
 	rm -rf downloaded_pages

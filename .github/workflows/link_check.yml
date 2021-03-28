@@ -2,12 +2,14 @@ name: Broken Link Notifications
 
 on:
   schedule:
-    - cron: "0 15 * * *"
+    - cron: '0 9-18 * * 1-5'
+  workflow_dispatch:
 
 jobs:
-  build:
+  link_check:
     runs-on: ubuntu-latest
-
     steps:
+      - uses: actions/checkout@v2
       - name: link check
-        run: bash link_check/main.sh
+        run: bash main.sh
+        working-directory: ./link_check

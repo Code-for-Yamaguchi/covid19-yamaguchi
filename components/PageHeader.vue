@@ -10,9 +10,9 @@
       <!-- <span>{{ $t('新型コロナウイルス感染症が心配なときに') }} </span> -->
       <time :datetime="formattedDate">{{ date }}</time>
     </div>
-    <div v-if="!['ja', 'ja-basic'].includes($i18n.locale)" class="annotation">
+    <!--<div v-if="!['ja', 'ja-basic'].includes($i18n.locale)" class="annotation">
       <span>{{ $t('注釈') }} </span>
-    </div>
+    </div>-->
   </div>
 </template>
 

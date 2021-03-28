@@ -177,7 +177,7 @@ export default Vue.extend({
               title: this.$t('京都府'),
               subtitle: this.$t(''),
               isOfficial: false,
-              link: 'https://stopcovid19-kyoto.netlify.app/'
+              link: 'https://kyoto.stopcovid19.jp/'
             },
             {
               title: this.$t('兵庫県'),
@@ -234,9 +234,9 @@ export default Vue.extend({
             },
             {
               title: this.$t('秋田県'),
-              subtitle: this.$t(''),
-              isOfficial: false,
-              link: 'https://covid19-akita.netlify.app/'
+              subtitle: this.$t('公式'),
+              isOfficial: true,
+              link: 'https://www.pref.akita.lg.jp/'
             },
             {
               title: this.$t('山形県'),
@@ -252,9 +252,10 @@ export default Vue.extend({
             },
             {
               title: this.$t('栃木県'),
-              subtitle: this.$t(''),
-              isOfficial: false,
-              link: 'https://covid19-tochigi.netlify.com/'
+              subtitle: this.$t('公式'),
+              isOfficial: true,
+              link:
+                'http://www.pref.tochigi.lg.jp/e04/welfare/hoken-eisei/kansen/hp/coronakensahasseijyoukyou.html'
             },
             {
               title: this.$t('群馬県'),
@@ -276,9 +277,10 @@ export default Vue.extend({
             },
             {
               title: this.$t('山梨県'),
-              subtitle: this.$t(''),
-              isOfficial: false,
-              link: 'https://stopcovid19.yamanashi.dev/'
+              subtitle: this.$t('公式'),
+              isOfficial: true,
+              link:
+                'https://www.pref.yamanashi.jp/koucho/coronavirus/info_coronavirus_data.html'
             },
             {
               title: this.$t('長野県'),
@@ -314,7 +316,8 @@ export default Vue.extend({
               title: this.$t('滋賀県'),
               subtitle: this.$t('公式'),
               isOfficial: true,
-              link: 'https://stopcovid19.pref.shiga.jp/'
+              link:
+                'https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/yakuzi/309252.html'
             },
             {
               title: this.$t('奈良県'),
@@ -348,9 +351,9 @@ export default Vue.extend({
             },
             {
               title: this.$t('徳島県'),
-              subtitle: this.$t(''),
-              isOfficial: false,
-              link: 'https://covid19-tokushima.netlify.com/'
+              subtitle: this.$t('公式'),
+              isOfficial: true,
+              link: 'https://www.pref.tokushima.lg.jp/'
             },
             {
               title: this.$t('高知県'),
@@ -385,9 +388,9 @@ export default Vue.extend({
             },
             {
               title: this.$t('宮崎県'),
-              subtitle: this.$t(''),
-              isOfficial: false,
-              link: 'https://covid19-miyazaki.netlify.app/'
+              subtitle: this.$t('公式'),
+              isOfficial: true,
+              link: 'https://www.pref.miyazaki.lg.jp/covid-19/index.html'
             },
             {
               title: this.$t('鹿児島県'),

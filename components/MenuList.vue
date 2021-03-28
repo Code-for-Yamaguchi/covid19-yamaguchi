@@ -6,7 +6,11 @@
       :class="['MenuList-Item', { '-border': item.divider }]"
       @click="$emit('click', $event)"
     >
-      <component :is="linkTag(item.link)" v-bind="linkAttrs(item.link)">
+      <component
+        :is="linkTag(item.link)"
+        v-if="!item.onlyJPContent || $i18n.locale == 'ja'"
+        v-bind="linkAttrs(item.link)"
+      >
         <span v-if="item.icon" class="MenuList-Icon">
           <component :is="iconTag(item.icon)" v-bind="iconAttrs(item.icon)">
             {{ item.icon }}
@@ -37,12 +41,15 @@ import FacebookIcon from '@/static/facebook.svg'
 import LineIcon from '@/static/line.svg'
 import TwitterIcon from '@/static/twitter.svg'
 import YoutubeIcon from '@/static/youtube.svg'
+import FoodIcon from '@/static/food.svg'
+import VaccineIcon from '@/static/vaccine.svg'
 
 type MenuItem = {
   icon?: string
   title: string
   link: string
   divider?: boolean
+  onlyJPContent?: boolean
 }
 
 export default Vue.extend({
@@ -53,7 +60,9 @@ export default Vue.extend({
     FacebookIcon,
     LineIcon,
     TwitterIcon,
-    YoutubeIcon
+    YoutubeIcon,
+    FoodIcon,
+    VaccineIcon
   },
   props: {
     items: {

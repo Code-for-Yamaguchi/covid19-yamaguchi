@@ -40,95 +40,27 @@
       </nav>
       <div id="sydr" :class="$style.section">
         <h4 :class="$style.sxnHeading">
-          {{ $t('かかりつけ医がいて、次の症状がある方') }}
+          {{ $t('かかりつけ医がいて、発熱などの症状がある方') }}
         </h4>
-        <ul :class="$style.boxes">
-          <li :class="[$style.box, $style.border]">
-            <span :class="$style.boxLead">{{
-              $t('風邪のような症状や、37.5℃以上の発熱が続いている')
-            }}</span>
-            <span :class="$style.alignLeft">{{
-              $t(
-                'ご高齢の方・基礎疾患のある方・妊娠中の方は2日程度続いた場合、それ以外の方は4日以上続いた場合を相談の目安としてください。'
-              )
-            }}</span>
-          </li>
-          <li :class="[$style.box, $style.border]">
-            <span :class="$style.boxLead">{{
-              $t('強いだるさ（倦怠感）や息苦しさ（呼吸困難）がある')
-            }}</span>
-          </li>
-        </ul>
         <p :class="[$style.box, $style.bgYellow]">
           <span :class="$style.large">{{
             $t('日ごろ受診されている医療機関に電話でご相談ください。')
           }}</span>
           <span :class="$style.small">{{
             $t(
-              '（上記の症状がない場合も、軽い症状があるなど不安のある方は、日ごろ受診されている医療機関に電話でご相談ください。）'
+              '（軽い症状があるなど不安のある方は、日ごろ受診されている医療機関に電話でご相談ください。）'
             )
           }}</span>
         </p>
       </div>
       <div id="sy" :class="$style.section">
         <h4 :class="$style.sxnHeading">
-          {{ $t('かかりつけ医がいない、次の症状がある方') }}
+          {{ $t('かかりつけ医がいない、発熱などの症状がある方') }}
         </h4>
-        <ul :class="$style.boxes">
-          <li :class="[$style.box, $style.border]">
-            <span :class="$style.boxLead">{{
-              $t('風邪のような症状や、37.5℃以上の発熱が続いている')
-            }}</span>
-            <span :class="$style.alignLeft">{{
-              $t(
-                'ご高齢の方・基礎疾患のある方・妊娠中の方は2日程度続いた場合、それ以外の方は4日以上続いた場合を相談の目安としてください。'
-              )
-            }}</span>
-          </li>
-          <li :class="[$style.box, $style.border]">
-            <span :class="$style.boxLead">{{
-              $t('強いだるさ（倦怠感）や息苦しさ（呼吸困難）がある')
-            }}</span>
-          </li>
-        </ul>
-        <!--
-        <div :class="[$style.box, $style.bgGray]">
-          <h5 :class="$style.sxnHeading">
-            {{ $t('新型コロナ受診相談窓口は、24時間対応しています') }}
-          </h5>
-          <dl :class="$style.contact">
-            <div>
-              <dt>{{ $t('平日（日中）:') }}</dt>
-              <dd :class="$style.overrideExternalLink">
-                <i18n path="{publicHealthCenter}に掲載しています">
-                  <template v-slot:publicHealthCenter>
-                    <external-link
-                      url="https://www.pref.yamaguchi.lg.jp/cms/a11000/sodan/koronasoudan.html"
-                    >
-                      {{ $t('各保健所の電話番号は福祉保健局HP') }}
-                    </external-link>
-                  </template>
-                </i18n>
-              </dd>
-            </div>
-            <div>
-              <dt>
-                {{ $t('土日祝 : 9時から17時') }}
-              </dt>
-              <dd>
-                <a :class="$style.tel" href="tel:083-933-3502">
-                  <icon-phone :class="$style.icon" aria-hidden="true" />
-                  083-933-3502</a
-                >
-              </dd>
-            </div>
-          </dl>
-        </div>
-        -->
-        <p :class="[$style.sxnText, $style.hr]">
+        <p :class="[$style.sxnText]">
           {{
             $t(
-              '上記の症状に当てはまるかどうかに関わらず、山口県新型コロナウイルス感染症専用相談ダイアルにご相談ください。'
+              '症状に関わらず、山口県新型コロナウイルス感染症専用相談ダイアルにご相談ください。'
             )
           }}
         </p>
@@ -161,7 +93,7 @@
         <p :class="$style.sxnText">
           {{
             $t(
-              '下記、山口県新型コロナウイルス感染症専用相談ダイアルにご相談ください。'
+              '山口県新型コロナウイルス感染症専用相談ダイアルにご相談ください。'
             )
           }}
         </p>
