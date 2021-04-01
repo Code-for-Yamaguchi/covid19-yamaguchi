@@ -110,7 +110,7 @@
           }}
         </li>
         <external-link
-          url="https://www.pref.yamaguchi.lg.jp/cms/a11000/sodan/koronasoudan.html"
+          url="https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html#10"
           :icon-size="16"
           >{{ $t('「新型コロナウイルスに関連する各種相談窓口について」') }}
         </external-link>
