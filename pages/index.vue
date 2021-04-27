@@ -14,6 +14,8 @@
       </div>
     </div>
     <whats-new class="mb-4" :items="newsItems" />
+    <cocoa-redirect-card />
+
     <static-info
       class="mb-4"
       :url-not-use="localePath('/flow')"
@@ -31,7 +33,7 @@
       <tested-number-card />
       <!-- 検査陽性者の状況 -->
       <confirmed-cases-details-card />
-      <!-- 陽性患者数（検査結果判明日別） -->
+      <!-- 陽性患者数(検査結果判明日別) -->
       <!-- positive-number-by-diagnosed-date-card / -->
       <!-- 区市町村別患者数 -->
       <!-- confirmed-cases-by-municipalities-card / -->
@@ -84,13 +86,14 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 // import AgencyCard from '@/components/cards/AgencyCard.vue'
 // import PositiveNumberByDiagnosedDateCard from '@/components/cards/PositiveNumberByDiagnosedDateCard.vue'
 import YamaguchiMapCard from '@/components/cards/YamaguchiMapCard.vue'
-// import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
+import CocoaRedirectCard from '@/components/CocoaRedirectCard.vue'
 
 export default Vue.extend({
   components: {
     // PositiveRateCard,
     PageHeader,
     WhatsNew,
+    CocoaRedirectCard,
     StaticInfo,
     CardRow,
     ConfirmedCasesDetailsCard,
@@ -149,7 +152,7 @@ export default Vue.extend({
                 "@type": "Person",
                 "name": "【山口県】新型コロナウィルス感染症対策サイト運営管理人"
             },
-            "description": "当サイトは新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、山口県内外の有志が開設したものです。",
+            "description": "当サイトは新型コロナウイルス感染症(COVID-19)に関する最新情報を提供するために、山口県内外の有志が開設したものです。",
             "image": {
                 "@type": "ImageObject",
                 "url": "https://yamaguchi.stopcovid19.jp/logo.png",
