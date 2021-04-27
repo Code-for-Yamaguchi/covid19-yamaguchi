@@ -103,9 +103,10 @@ export default Vue.extend({
             },
             {
               title: this.$t('福岡県'),
-              subtitle: this.$t(''),
+              subtitle: this.$t('公式'),
               isOfficial: false,
-              link: 'https://fukuoka.stopcovid19.jp/'
+              link:
+                'https://www.pref.fukuoka.lg.jp/contents/covid-19-portal.html'
             },
             {
               title: this.$t('福岡市'),
