@@ -19,7 +19,7 @@
               >
                 {{ $t('新型コロナウイルス接触確認アプリ') }}
               </a>
-              <span class="flex"> ( {{ $t('厚生労働省公式') }} ) </span>
+              <span class="flex"> ( {{ $t('厚生労働省') }} ) </span>
             </h3>
           </div>
         </v-col>
@@ -37,7 +37,7 @@
             <div>
               {{
                 $t(
-                  '本アプリは多くの方にお使いいただくほど効果を発揮します。インストールをお願いします。'
+                  'このアプリを設定した人どうしの接触（1m以内、15分以上）が記録されます。新型コロナウイルスに陽性と判定されましたら本アプリに匿名で登録することができます。最近接触した人の中に陽性登録した人がいましたら、通知と適切な行動をお知らせします。'
                 )
               }}
             </div>
@@ -46,11 +46,11 @@
           <div class="AppInstall-buttons">
             <a
               href="https://apps.apple.com/jp/app/%E6%96%B0%E5%9E%8B%E3%82%B3%E3%83%AD%E3%83%8A%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%E6%8E%A5%E8%A7%A6%E7%A2%BA%E8%AA%8D%E3%82%A2%E3%83%97%E3%83%AA/id1516764458?mt=8"
-              class="AppStore flex"
+              class="AppStore"
             />
             <a
               href="https://play.google.com/store/apps/details?id=jp.go.mhlw.covid19radar"
-              class="GooglePlay flex"
+              class="GooglePlay"
             >
               <img
                 alt="Google Play で手に入れよう"
@@ -143,6 +143,7 @@ $tinySmall: 420;
     @include font-size(14);
 
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 
     .AppInstall-block {
@@ -153,6 +154,9 @@ $tinySmall: 420;
         &-description {
           flex-basis: 40%;
           margin-bottom: 12px;
+          div {
+            margin-bottom: 10px;
+          }
         }
       }
     }
