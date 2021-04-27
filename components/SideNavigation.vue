@@ -124,6 +124,20 @@
 
         <div class="SideNavigation-SponsorLinkContainer">
           <br />
+          Operations by:<br />
+          <a
+            href="https://www.codeforyamaguchi.org/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="/codeforyamaguchi.svg"
+              width="176px"
+              height="62px"
+              alt="Code for Yamaguchi"
+            />
+          </a>
+          <br />
           Powered by:<br />
           <a href="https://www.sakura.ad.jp/" target="_blank" rel="noopener">
             <!-- <span class="image-title">{{$t('さくらインターネット')}}</span> -->
