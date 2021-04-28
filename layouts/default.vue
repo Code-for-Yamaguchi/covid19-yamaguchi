@@ -116,6 +116,10 @@ export default Vue.extend({
       titleTemplate: `%s | ${this.$t('山口県公認')} ${this.$t('新型コロナウイルス感染症')}${this.$t('対策サイト')}`,
       meta: [
         {
+          name: 'google-site-verification',
+          content: '_E5asljzqLezMC-PzVtaM38V-GE3ppmY_gYVuz4m0J0'
+        },
+        {
           hid: 'author',
           name: 'author',
           content: this.$tc('山口県')
