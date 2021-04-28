@@ -1,12 +1,12 @@
 <template>
-  <v-col cols="12" md="6" class="DataCard">
+  <div>
     <client-only>
       <div class="AppInstall">
         <div class="AppInstall-heading">
           <h3 class="AppInstall-title">
             {{ $t('新型コロナウイルス接触確認アプリ') }}
           </h3>
-          <h4 class="AppInstall-subtitle"> ( {{ $t('厚生労働省') }} ) </h4>
+          <h4 class="AppInstall-subtitle">( {{ $t('厚生労働省') }} )</h4>
         </div>
         <div class="AppInstall-content">
           <div class="AppInstall-block AppInstall-block-description">
@@ -45,12 +45,11 @@
         </div>
       </div>
     </client-only>
-  </v-col>
+  </div>
 </template>
 
 <style lang="scss">
 $mediumLarge: 900;
-$tinySmall: 420;
 @function px2vw($px, $vw: $mediumLarge) {
   @return $px / $vw * 100vw;
 }
