@@ -21,6 +21,7 @@
 import formatGraph from '@/utils/formatGraph'
 import formatTable from '@/utils/formatTable'
 import DataTable from '@/components/DataTable.vue'
+import { getComplementedDate } from '~/utils/formatDate'
 
 export default {
   components: {
@@ -34,10 +35,17 @@ export default {
     // 感染者数
     const patientsTable = formatTable(Patients.data)
 
+    const displayDate = getComplementedDate(
+      patientsGraph[patientsGraph.length - 1].label
+    )
+
+    const month = displayDate.getMonth() + 1
+    const lastDate = displayDate.getDate()
+
     const sumInfoOfPatients = {
       lText: patientsTable.datasets[0].No,
       sText: this.$t('{date}の累計', {
-        date: patientsGraph[patientsGraph.length - 1].label
+        date: `${month}月${lastDate}日`
       }),
       unit: this.$t('例目')
     }
