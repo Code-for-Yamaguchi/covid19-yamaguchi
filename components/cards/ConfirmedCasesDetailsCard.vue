@@ -30,7 +30,6 @@ export default {
   },
   data() {
     const Hospitalizations = this.$store.state.data.hospitalizations
-    console.log(Hospitalizations)
     // 検査陽性者の状況
     const confirmedCases = formatConfirmedCases(Hospitalizations.data[0])
 
