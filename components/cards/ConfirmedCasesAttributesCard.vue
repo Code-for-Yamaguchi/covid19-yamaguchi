@@ -138,6 +138,10 @@ export default {
           } else if (aDate[0] < bDate[0]) {
             comparison = -1
           }
+        } else if (index[0] === 'No') {
+          const aDate = parseInt(a[index[0]].substring(0, a.length - 1))
+          const bDate = parseInt(b[index[0]].substring(0, a.length - 1))
+          comparison = aDate[1] > bDate[1] ? 1 : -1
         }
 
         // 「調査中」は年代に限らず、居住地にも存在するので、年代ソートの外に置いている。
