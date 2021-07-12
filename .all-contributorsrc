@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nishidayoshikatsu",
+      "name": "Yoshikatsu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42875682?v=4",
+      "profile": "http://nsd24technology@gmail.com",
+      "contributions": [
+        "projectManagement"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "covid19-yamaguchi",
+  "projectOwner": "nishidayoshikatsu",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
