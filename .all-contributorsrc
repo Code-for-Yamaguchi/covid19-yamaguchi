@@ -14,7 +14,8 @@
         "projectManagement",
         "review",
         "question",
-        "maintenance"
+        "maintenance",
+        "code"
       ]
     }
   ],
