@@ -71,6 +71,17 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "Tomitomi1021",
+      "name": "Tomitomi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29561529?v=4",
+      "profile": "http://tomitomi1021.github.io",
+      "contributions": [
+        "code",
+        "bug",
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
