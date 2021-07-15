@@ -37,6 +37,16 @@
         "code",
         "bug"
       ]
+    },
+    {
+      "login": "atososon",
+      "name": "atososon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54769649?v=4",
+      "profile": "https://github.com/atososon",
+      "contributions": [
+        "code",
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
