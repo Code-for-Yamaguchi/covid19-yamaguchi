@@ -73,6 +73,27 @@
       ]
     },
     {
+      "login": "Tomitomi1021",
+      "name": "Tomitomi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29561529?v=4",
+      "profile": "http://tomitomi1021.github.io",
+      "contributions": [
+        "code",
+        "bug",
+        "translation"
+      ]
+    },
+    {
+      "login": "KeisukeSawa",
+      "name": "KeisukeSawa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21189750?v=4",
+      "profile": "https://github.com/KeisukeSawa",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
       "login": "freshcl",
       "name": "freshcl",
       "avatar_url": "https://avatars.githubusercontent.com/u/13272328?v=4",
@@ -80,7 +101,7 @@
       "contributions": [
         "code"
       ]
-    }
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "covid19-yamaguchi",
