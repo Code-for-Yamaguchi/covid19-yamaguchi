@@ -1,6 +1,6 @@
 # 山口県公認 新型コロナウイルス感染症対策サイト
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [](
@@ -105,6 +105,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://nsd24technology@gmail.com"><img src="https://avatars.githubusercontent.com/u/42875682?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yoshikatsu</b></sub></a><br /><a href="#projectManagement-nishidayoshikatsu" title="Project Management">📆</a> <a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/pulls?q=is%3Apr+reviewed-by%3Anishidayoshikatsu" title="Reviewed Pull Requests">👀</a> <a href="#question-nishidayoshikatsu" title="Answering Questions">💬</a> <a href="#maintenance-nishidayoshikatsu" title="Maintenance">🚧</a> <a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/commits?author=nishidayoshikatsu" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/paichi81"><img src="https://avatars.githubusercontent.com/u/4400857?v=4?s=100" width="100px;" alt=""/><br /><sub><b>paichi81</b></sub></a><br /><a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/commits?author=paichi81" title="Code">💻</a> <a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/issues?q=author%3Apaichi81" title="Bug reports">🐛</a></td>
     <td align="center"><a href="http://onwtr.work"><img src="https://avatars.githubusercontent.com/u/44804976?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wataru Ono</b></sub></a><br /><a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/commits?author=watagit" title="Code">💻</a> <a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/issues?q=author%3Awatagit" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/atososon"><img src="https://avatars.githubusercontent.com/u/54769649?v=4?s=100" width="100px;" alt=""/><br /><sub><b>atososon</b></sub></a><br /><a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/commits?author=atososon" title="Code">💻</a></td>
   </tr>
 </table>
 
