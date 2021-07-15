@@ -1,6 +1,6 @@
 # 山口県公認 新型コロナウイルス感染症対策サイト
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [](
@@ -108,6 +108,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/atososon"><img src="https://avatars.githubusercontent.com/u/54769649?v=4?s=100" width="100px;" alt=""/><br /><sub><b>atososon</b></sub></a><br /><a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/commits?author=atososon" title="Code">💻</a> <a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/issues?q=author%3Aatososon" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/crispytaffy"><img src="https://avatars.githubusercontent.com/u/2215551?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chie Mizuta</b></sub></a><br /><a href="#translation-crispytaffy" title="Translation">🌍</a> <a href="#a11y-crispytaffy" title="Accessibility">️️️️♿️</a> <a href="#design-crispytaffy" title="Design">🎨</a> <a href="#data-crispytaffy" title="Data">🔣</a></td>
     <td align="center"><a href="https://github.com/gunsow911"><img src="https://avatars.githubusercontent.com/u/20750714?v=4?s=100" width="100px;" alt=""/><br /><sub><b>gunsow911</b></sub></a><br /><a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/commits?author=gunsow911" title="Code">💻</a> <a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/issues?q=author%3Agunsow911" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/freshcl"><img src="https://avatars.githubusercontent.com/u/13272328?v=4?s=100" width="100px;" alt=""/><br /><sub><b>freshcl</b></sub></a><br /><a href="https://github.com/nishidayoshikatsu/covid19-yamaguchi/commits?author=freshcl" title="Code">💻</a></td>
   </tr>
 </table>
 
