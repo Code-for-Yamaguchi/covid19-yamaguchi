@@ -82,6 +82,15 @@
         "bug",
         "translation"
       ]
+    },
+    {
+      "login": "KeisukeSawa",
+      "name": "KeisukeSawa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21189750?v=4",
+      "profile": "https://github.com/KeisukeSawa",
+      "contributions": [
+        "code",
+        "bug"
     }
   ],
   "contributorsPerLine": 7,
