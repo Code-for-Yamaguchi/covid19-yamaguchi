@@ -2,7 +2,7 @@ name: Broken Link Notifications
 
 on:
   schedule:
-    - cron: '0 9-18 * * 1-5'
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
 jobs:
