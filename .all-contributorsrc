@@ -91,7 +91,17 @@
       "contributions": [
         "code",
         "bug"
-    }
+      ]
+    },
+    {
+      "login": "freshcl",
+      "name": "freshcl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13272328?v=4",
+      "profile": "https://github.com/freshcl",
+      "contributions": [
+        "code"
+      ]
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "covid19-yamaguchi",
