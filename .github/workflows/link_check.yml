@@ -11,5 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: link check
+        env:
+          HOOK_URL: ${{ secrets.HOOK_URL }}
+          TARGET_DOMAIN: ${{ secrets.TARGET_DOMAIN }}
         run: bash main.sh
         working-directory: ./link_check

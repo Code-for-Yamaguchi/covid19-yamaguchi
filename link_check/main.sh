@@ -1,4 +1,4 @@
-source setting.sh
+source ../.env
 
 function url_extract(){
 	#grep -Eo "http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?" $1
