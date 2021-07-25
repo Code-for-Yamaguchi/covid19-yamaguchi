@@ -39,4 +39,8 @@ if ! cert_check $TARGET_DOMAIN; then
 	send_message $HOOK_URL << EOS
 WARNING: Expired certification detected!!
 EOS
+else
+send_message $HOOK_URL << EOS
+SUCCESS: Certification is not expired.
+EOS
 fi

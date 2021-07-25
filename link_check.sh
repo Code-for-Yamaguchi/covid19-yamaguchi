@@ -82,4 +82,8 @@ WARNING: Broken link detected!!
 $broken_links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 EOS
+else
+send_message $HOOK_URL << EOS
+SUCCESS: Broken link not detected!!
+EOS
 fi
