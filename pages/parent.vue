@@ -121,14 +121,14 @@
       <ul>
         <li>
           <external-link
-            url="https://www.pref.yamaguchi.lg.jp/cmsdata/6/9/1/6919f905dd62276886c5647ec3d44f17.pdf"
+            url="https://www.pref.yamaguchi.lg.jp/cmsdata/6/3/b/63bb451072ec32b203643225c257a2a4.pdf"
             :icon-size="16"
             >{{ $t('子育て中の保護者のための相談窓口一覧（チラシ）') }}
           </external-link>
         </li>
         <li>
           <external-link
-            url="https://www.pref.yamaguchi.lg.jp/cmsdata/a/9/2/a92e8ea17c49a05ef2671a1c36581eb9.pdf"
+            url="https://www.pref.yamaguchi.lg.jp/cmsdata/4/0/a/40ad65e58793e4fa7b46c30f003a9c7f.pdf"
             :icon-size="16"
             >{{ $t('子どものための相談窓口一覧（チラシ）') }}
           </external-link>
