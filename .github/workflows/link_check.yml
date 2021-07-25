@@ -14,5 +14,4 @@ jobs:
         env:
           HOOK_URL: ${{ secrets.HOOK_URL }}
           TARGET_DOMAIN: ${{ secrets.TARGET_DOMAIN }}
-        run: bash main.sh
-        working-directory: ./link_check
+        run: bash link_check.sh

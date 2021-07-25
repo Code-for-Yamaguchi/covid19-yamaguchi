@@ -14,5 +14,4 @@ jobs:
         env:
           HOOK_URL: ${{ secrets.HOOK_URL }}
           TARGET_DOMAIN: ${{ secrets.TARGET_DOMAIN }}
-        run: bash main.sh
-        working-directory: ./cert_check
+        run: bash cert_check.sh
