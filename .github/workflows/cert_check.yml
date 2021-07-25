@@ -1,4 +1,4 @@
-name: Broken Link Notifications
+name: Broken Certificates Notifications
 
 on:
   schedule:
@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: link check
+      - name: cert check
         env:
           HOOK_URL: ${{ secrets.HOOK_URL }}
           TARGET_DOMAIN: ${{ secrets.TARGET_DOMAIN }}
-        run: bash link_check.sh
+        run: bash cert_check.sh

@@ -1,4 +1,4 @@
-source ../.env
+source .env
 
 function url_extract(){
 	#grep -Eo "http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?" $1
@@ -81,5 +81,9 @@ WARNING: Broken link detected!!
 ~~~~~Broken link list~~~~~~~~~
 $broken_links
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EOS
+else
+send_message $HOOK_URL << EOS
+SUCCESS: Broken link not detected!!
 EOS
 fi
