@@ -1,7 +1,8 @@
 source setting.sh
 
 function url_extract(){
-	grep -oP $1 -e "http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?"
+	#grep -Eo "http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?" $1
+	grep -Eo "http(s?)://(\w|:|%|#|\$|&|\?|\(|\)|~|\.|=|\+|\-|/)+" $1
 }
 
 function url_extract_all(){
