@@ -7,40 +7,53 @@
         </v-icon>
         {{ $t('最新のお知らせ') }}
       </h3>
-
-      <div v-if="stateOfEmergency">
-        <span class="WhatsNew-link-to-emergency-page">
-          <external-link
-            url="https://www.pref.yamaguchi.lg.jp/cms/a10900/corona/202005050001.html"
-          >
-            <v-icon size="2rem" class="WhatsNew-link-to-emergency-page-icon">
-              mdi-bullhorn
-            </v-icon>
-            {{ $t('山口県緊急事態措置について') }}
-          </external-link>
-        </span>
-      </div>
-      <div v-else-if="stopEmergency">
-        <span class="WhatsNew-link-to-end-of-emergency-page">
-          <external-link
-            url="https://www.pref.yamaguchi.lg.jp/cms/a10900/corona/202005150001.html"
-          >
-            <v-icon size="2rem" class="WhatsNew-link-to-emergency-page-icon">
-              mdi-bullhorn
-            </v-icon>
-            {{ $t('山口県緊急事態措置の解除について') }}
-          </external-link>
-        </span>
-      </div>
-      <div v-if="stateOfTwitter">
-        <span class="WhatsNew-link-to-twitter">
-          <external-link url="https://twitter.com/CoronaYamaguchi">
-            <v-icon size="2rem" class="TwitterIcon">
-              mdi-twitter
-            </v-icon>
-            {{ $t('最新情報はこちら') }}
-          </external-link>
-        </span>
+      <div class="WhatsNew-option">
+        <div v-if="stateOfEmergency">
+          <span class="WhatsNew-link-to-emergency-page">
+            <external-link
+              url="https://www.pref.yamaguchi.lg.jp/cms/a10900/corona/202005050001.html"
+            >
+              <v-icon size="2rem" class="WhatsNew-link-to-emergency-page-icon">
+                mdi-bullhorn
+              </v-icon>
+              {{ $t('山口県緊急事態措置について') }}
+            </external-link>
+          </span>
+        </div>
+        <div v-else-if="stopEmergency">
+          <span class="WhatsNew-link-to-end-of-emergency-page">
+            <external-link
+              url="https://www.pref.yamaguchi.lg.jp/cms/a10900/corona/202005150001.html"
+            >
+              <v-icon size="2rem" class="WhatsNew-link-to-emergency-page-icon">
+                mdi-bullhorn
+              </v-icon>
+              {{ $t('山口県緊急事態措置の解除について') }}
+            </external-link>
+          </span>
+        </div>
+        <div v-if="stateOfConcentratedTerms">
+          <span class="WhatsNew-link-to-emergency-page">
+            <external-link
+              url="https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html"
+            >
+              <v-icon size="2rem" class="WhatsNew-link-to-emergency-page-icon">
+                mdi-bullhorn
+              </v-icon>
+              {{ $t('山口県感染拡大防止集中対策について') }}
+            </external-link>
+          </span>
+        </div>
+        <div v-if="stateOfTwitter">
+          <span class="WhatsNew-link-to-twitter">
+            <external-link url="https://twitter.com/CoronaYamaguchi">
+              <v-icon size="2rem" class="TwitterIcon">
+                mdi-twitter
+              </v-icon>
+              {{ $t('最新情報はこちら') }}
+            </external-link>
+          </span>
+        </div>
       </div>
     </div>
     <ul class="WhatsNew-list">
@@ -91,10 +104,13 @@ export default Vue.extend({
     }
   },
   data() {
-    const stateOfEmergency = false // 緊急宣言自体発令中か?
+    // HACK: 各種イベントフラグ
+    const stateOfEmergency = false
+    const stateOfConcentratedTerms = true
     const stateOfTwitter = true
     const data = {
       stateOfEmergency,
+      stateOfConcentratedTerms,
       stateOfTwitter
     }
     return data
@@ -137,6 +153,11 @@ export default Vue.extend({
       }
     }
 
+    .WhatsNew-option {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     .WhatsNew-link-to-end-of-emergency-page {
       background-color: $gray-4;
       border: 2px solid $gray-4;
@@ -170,6 +191,7 @@ export default Vue.extend({
       background-color: $emergency;
       // background-color: $gray-4;
       border: 2px solid $emergency;
+      margin-right: 10px; //HACK: 他のバナーと横に並べる場合
       //border: 2px solid $gray-4;
       color: $gray-1;
       border-radius: 4px;
