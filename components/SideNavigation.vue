@@ -225,12 +225,12 @@ export default Vue.extend({
         {
           title: this.$t('新型コロナウイルス感染症　関連情報'),
           link:
-            'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202007270002.html'
+            'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html'
         },
         {
           title: this.$t('新型コロナウイルスに関連する相談窓口'),
           link:
-            'https://www.pref.yamaguchi.lg.jp/cms/a10000/korona2020/202004240002.html',
+            'https://www.pref.yamaguchi.lg.jp/cms/a15200/kansensyou/ncorona.html#10',
           divider: true
         },
         //
@@ -352,14 +352,14 @@ export default Vue.extend({
         {
           icon: 'YoutubeIcon',
           title: this.$t('山口県広報広聴課 公式チャンネル'),
-          link: 'https://www.youtube.com/channel/UCukxs2WSvAbgAweFsj8k5Cw',
-          divider: true
-        },
-        {
-          icon: 'FoodIcon',
-          title: this.$t('県内Go To Eat情報'),
-          link: 'https://gotoeat-yamaguchi.com/use/'
+          link: 'https://www.youtube.com/channel/UCukxs2WSvAbgAweFsj8k5Cw'
+          // divider: true
         }
+        // {
+        //  icon: 'FoodIcon',
+        //  title: this.$t('県内Go To Eat情報'),
+        //  link: 'https://gotoeat-yamaguchi.com/use/'
+        // }
       ]
     }
   },
